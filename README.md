@@ -31,6 +31,16 @@ This repository shows how to use Microsoft 365 Copilot as a lightweight digital 
 > Audience: people managers, functional leaders, project managers, program managers, chiefs of staff, enablement teams, and Microsoft 365 Copilot champions  
 > Scope: Microsoft 365 Copilot, Copilot Chat, Outlook, Teams, meeting context, SharePoint, OneDrive, Agent Builder, and selective Copilot Studio escalation
 
+## Start Here
+
+New to the project?
+
+1. Read the overview
+2. Run the Daily Manager Briefing
+3. Use the Meeting Prep Brief
+4. Create the Manager Operating Agent
+5. Scale with governance
+
 ## The 3-phase deployment model
 
 | Phase | Goal | What you deploy | What you avoid |
