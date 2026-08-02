@@ -36,38 +36,12 @@ They need one reliable operating rhythm that helps them:
 | Phase 3: Governed Scale and Controlled Execution | Scale safely across teams | Department rollout, governance review, success metrics, selective Copilot Studio use | Do not create action-taking agents without approval gates |
 
 ```mermaid
-```mermaid
-flowchart TD
-
-P1["Phase 1: Manager Foundation"]
-P2["Phase 2: Agent Builder"]
-P3["Phase 3: Governed Scale"]
-
-P1 --> P2
-P2 --> P3
-
-D1["Daily Manager Briefing"]
-D2["Meeting Prep Brief"]
-D3["Team Commitments Review"]
-
-A1["Manager Operating Agent"]
-A2["Weekly Manager Review"]
-
-G1["Governance"]
-G2["Success Metrics"]
-G3["Controlled Execution"]
-
-D1 --> P1
-D2 --> P1
-D3 --> P1
-
-A1 --> P2
-A2 --> P2
-
-G1 --> P3
-G2 --> P3
-G3 --> P3
-```
+flowchart LR
+    A[Phase 1<br/>Manager Foundation<br/><br/>Manual prompts] --> B[Phase 2<br/>Agent Builder<br/><br/>Reusable cadence]
+    B --> C[Phase 3<br/>Governed Scale<br/><br/>Controlled execution]
+    A1[Daily Briefing<br/>Meeting Prep<br/>Team Follow-Up] --> A
+    B1[Manager Operating Agent<br/>Starter Prompts<br/>Weekly Review] --> B
+    C1[Governance<br/>Metrics<br/>Selective Copilot Studio] --> C
 ```
 
 ## Quick start
