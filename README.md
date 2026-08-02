@@ -2,7 +2,26 @@
 
 Turn Microsoft 365 Copilot into a daily chief of staff for managers.
 
-A practical, open-source playbook for manager workflows, Agent Builder templates, rollout checklists, governance, and success metrics.
+An open-source playbook that helps people managers, project managers, and functional leaders use Microsoft 365 Copilot to prepare, prioritize, follow through, and scale their impact.
+
+⭐ If this saves you time, please star the repository.
+
+---
+
+## Why this exists
+
+Every executive gets leverage.
+
+Most managers don't.
+
+This repository shows how to use Microsoft 365 Copilot as a lightweight digital chief of staff that helps managers:
+
+- Start the day with clear priorities
+- Prepare for important meetings
+- Track commitments and follow-ups
+- Protect focus time
+- Review team execution
+- Scale without adding overhead
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Docs](https://img.shields.io/badge/docs-manager_playbook-brightgreen.svg)](docs/00-overview.md)
@@ -11,21 +30,6 @@ A practical, open-source playbook for manager workflows, Agent Builder templates
 > Status: public playbook draft  
 > Audience: people managers, functional leaders, project managers, program managers, chiefs of staff, enablement teams, and Microsoft 365 Copilot champions  
 > Scope: Microsoft 365 Copilot, Copilot Chat, Outlook, Teams, meeting context, SharePoint, OneDrive, Agent Builder, and selective Copilot Studio escalation
-
-## Why this exists
-
-The public hook is simple: **Copilot can become a chief of staff for every manager, not just executives.**
-
-Most managers do not need ten agents on day one.
-
-They need one reliable operating rhythm that helps them:
-
-- start the day with clear priorities
-- prepare for key meetings
-- track commitments and follow-ups
-- protect focus time
-- review team execution weekly
-- avoid turning Copilot into another inbox ritual
 
 ## The 3-phase deployment model
 
@@ -36,12 +40,34 @@ They need one reliable operating rhythm that helps them:
 | Phase 3: Governed Scale and Controlled Execution | Scale safely across teams | Department rollout, governance review, success metrics, selective Copilot Studio use | Do not create action-taking agents without approval gates |
 
 ```mermaid
-flowchart LR
-    A[Phase 1<br/>Manager Foundation<br/><br/>Manual prompts] --> B[Phase 2<br/>Agent Builder<br/><br/>Reusable cadence]
-    B --> C[Phase 3<br/>Governed Scale<br/><br/>Controlled execution]
-    A1[Daily Briefing<br/>Meeting Prep<br/>Team Follow-Up] --> A
-    B1[Manager Operating Agent<br/>Starter Prompts<br/>Weekly Review] --> B
-    C1[Governance<br/>Metrics<br/>Selective Copilot Studio] --> C
+flowchart TD
+
+P1["Phase 1: Manager Foundation"]
+P2["Phase 2: Agent Builder"]
+P3["Phase 3: Governed Scale"]
+
+P1 --> P2
+P2 --> P3
+
+D1["Daily Briefing"]
+D2["Meeting Prep"]
+D3["Team Commitments"]
+
+A1["Manager Operating Agent"]
+A2["Weekly Review"]
+
+G1["Governance"]
+G2["Metrics"]
+
+D1 --> P1
+D2 --> P1
+D3 --> P1
+
+A1 --> P2
+A2 --> P2
+
+G1 --> P3
+G2 --> P3
 ```
 
 ## Quick start
